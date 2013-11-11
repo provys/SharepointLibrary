@@ -1,7 +1,7 @@
 SharepointLibrary
 =================
 Sample of use:
-
+<pre><code>
 const string СсылкаПортала = @"http://xxxxx/_layouts/viewlsts.aspx";
 public void ДанныеСпискаДоговоров()
 {
@@ -14,3 +14,4 @@ public void ДанныеСпискаДоговоров()
     }
     catch (Exception ex) { Assert.Fail(ex.Message); }
 }
+</code></pre>

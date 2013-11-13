@@ -101,7 +101,7 @@ namespace SharepointLibrary
 
                 CamlQuery camlQuery = new CamlQuery
                 {
-                    ViewXml = string.Format("<View><Query>{0}</Query><RowLimit><Where>{1}</Where></RowLimit></View>", условияВыборки, максимумСтрок) /*<Geq><FieldRef Name='ID'/><Value Type='Number'>10</Value></Geq>*/ 
+                    ViewXml = string.Format("<View><Query><Where>{0}</Where></Query><RowLimit>{1}</RowLimit></View>", условияВыборки, максимумСтрок) /*<Geq><FieldRef Name='ID'/><Value Type='Number'>10</Value></Geq>*/ 
                 };
                 ListItemCollection данные = список.GetItems(camlQuery);
 
